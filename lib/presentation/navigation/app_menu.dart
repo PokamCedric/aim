@@ -28,56 +28,6 @@ class AppMenu {
         icon: Icons.home,
         route: AppRoute.homeRoute,
       ),
-      AppMenuItem(
-        name: AppLocale.labels.goalHeadline,
-        icon: Icons.star,
-        route: AppRoute.goalRoute,
-      ),
-      AppMenuItem(
-        name: AppLocale.labels.accountHeadline,
-        icon: Icons.credit_card,
-        route: AppRoute.accountRoute,
-      ),
-      AppMenuItem(
-        name: AppLocale.labels.budgetHeadline,
-        icon: Icons.calendar_month,
-        route: AppRoute.budgetRoute,
-      ),
-      AppMenuItem(
-        name: AppLocale.labels.billHeadline,
-        icon: Icons.money_off,
-        route: AppRoute.billRoute,
-      ),
-      AppMenuItem(
-        name: AppLocale.labels.invoiceHeadline,
-        icon: Icons.attach_money,
-        route: AppRoute.invoiceRoute,
-      ),
-      AppMenuItem(
-        name: AppLocale.labels.transfersHeadline,
-        icon: Icons.transform,
-        route: AppRoute.invoiceTransferRoute,
-      ),
-      AppMenuItem(
-        name: AppLocale.labels.currencyHeadline,
-        icon: Icons.currency_exchange,
-        route: AppRoute.currencyRoute,
-      ),
-      AppMenuItem(
-        name: AppLocale.labels.metricsHeadline,
-        icon: Icons.timeline,
-        route: AppRoute.metricsRoute,
-      ),
-      AppMenuItem(
-        name: AppLocale.labels.automationHeadline,
-        icon: Icons.access_alarms,
-        route: AppRoute.automationRoute,
-      ),
-      AppMenuItem(
-        name: AppLocale.labels.settingsHeadline,
-        icon: Icons.settings,
-        route: AppRoute.settingsRoute,
-      ),
       if (![TargetPlatform.iOS, TargetPlatform.macOS, TargetPlatform.android].contains(defaultTargetPlatform))
         AppMenuItem(
           name: AppLocale.labels.subscriptionHeadline,

@@ -18,7 +18,7 @@ class MarkdownBuilderWrapper extends StatelessWidget with LauncherMixin {
     this.onTapLink,
   });
 
-  void _openURL(_, String? url, __) {
+  void _openURL(_, String? url, _) {
     if (url != null && (url.contains('https://') || url.contains('mailto:'))) {
       openURL(url);
     }

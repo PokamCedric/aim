@@ -62,7 +62,6 @@ class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
   WidgetBuilder? getPage(String route, Object? arguments) {
-    final args = arguments as Map<String, dynamic>?;
 
     Widget router(String route) => switch (route) {
       '/counter' => const CounterPage(),

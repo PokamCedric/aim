@@ -1,11 +1,10 @@
-// Copyright 2023 The terCAD team. All rights reserved.
-// Use of this source code is governed by a CC BY-NC-ND 4.0 license that can be found in the LICENSE file.
-
+import 'package:aim/domain/entities/table_filter.dart';
 import 'package:flutter/material.dart';
 import 'package:aim/core/_ext/build_context_ext.dart';
 import 'package:aim/presentation/design/wrapper/text_wrapper.dart';
 import 'package:aim/presentation/pages/base/abstract_page_state.dart';
 import 'package:aim/presentation/widgets/data_table.dart';
+
 
 // Example 1: Using the table with Person entity
 class PeopleTablePage extends StatefulWidget {
@@ -117,9 +116,9 @@ class PeopleTablePageState extends AbstractPageState<PeopleTablePage> {
           values: Role.values,
           getEnum: (p) => p.role,
           selectedValue: _filterRole,
-          onChanged: (value) {
-            setState(() => _filterRole = value);
-          },
+          // onChanged: (value) {
+          //   setState(() => _filterRole = value);
+          // },
         ),
         NumberRangeTableFilter<Person>(
           label: 'Age',
@@ -127,12 +126,12 @@ class PeopleTablePageState extends AbstractPageState<PeopleTablePage> {
           getNumber: (p) => p.age,
           min: _filterAgeMin,
           max: _filterAgeMax,
-          onChanged: (min, max) {
-            setState(() {
-              _filterAgeMin = min;
-              _filterAgeMax = max;
-            });
-          },
+          // onChanged: (min, max) {
+          //   setState(() {
+          //     _filterAgeMin = min;
+          //     _filterAgeMax = max;
+          //   });
+          // },
         ),
         DateRangeTableFilter<Person>(
           label: 'Hire Date',
@@ -140,12 +139,12 @@ class PeopleTablePageState extends AbstractPageState<PeopleTablePage> {
           getDate: (p) => p.hireDate,
           from: _filterDateFrom,
           to: _filterDateTo,
-          onChanged: (from, to) {
-            setState(() {
-              _filterDateFrom = from;
-              _filterDateTo = to;
-            });
-          },
+          // onChanged: (from, to) {
+          //   setState(() {
+          //     _filterDateFrom = from;
+          //     _filterDateTo = to;
+          //   });
+          // },
         ),
       ],
       onRowTap: (person) {
@@ -290,9 +289,9 @@ class ProductsTablePageState extends AbstractPageState<ProductsTablePage> {
           values: Category.values,
           getEnum: (p) => p.category,
           selectedValue: _filterCategory,
-          onChanged: (value) {
-            setState(() => _filterCategory = value);
-          },
+          // onChanged: (value) {
+          //   setState(() => _filterCategory = value);
+          // },
         ),
         NumberRangeTableFilter<Product>(
           label: 'Price',
@@ -300,12 +299,12 @@ class ProductsTablePageState extends AbstractPageState<ProductsTablePage> {
           getNumber: (p) => p.price,
           min: _filterPriceMin,
           max: _filterPriceMax,
-          onChanged: (min, max) {
-            setState(() {
-              _filterPriceMin = min;
-              _filterPriceMax = max;
-            });
-          },
+          // onChanged: (min, max) {
+          //   setState(() {
+          //     _filterPriceMin = min;
+          //     _filterPriceMax = max;
+          //   });
+          // },
         ),
       ],
       onDelete: (product) {
