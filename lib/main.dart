@@ -7,17 +7,17 @@ import 'package:provider/provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 // Import your existing classes - NO REWRITES
-import 'package:aim/_classes/herald/app_design.dart';
-import 'package:aim/_classes/herald/app_locale.dart';
-import 'package:aim/_classes/herald/app_zoom.dart';
-import 'package:aim/_classes/herald/app_theme.dart';
-import 'package:aim/_classes/herald/app_palette.dart';
-import 'package:aim/_classes/storage/app_preferences.dart';
-import 'package:aim/_configs/custom_color_scheme.dart';
-import 'package:aim/_configs/custom_text_theme.dart';
+import 'package:aim/application/state/app_design.dart';
+import 'package:aim/application/state/app_locale.dart';
+import 'package:aim/application/state/app_zoom.dart';
+import 'package:aim/application/state/app_theme.dart';
+import 'package:aim/application/state/app_palette.dart';
+import 'package:aim/data/datasources/local/app_preferences.dart';
+import 'package:aim/core/theme/custom_color_scheme.dart';
+import 'package:aim/core/theme/custom_text_theme.dart';
 import 'package:aim/l10n/app_localization.dart';
-import 'package:aim/pages/exples/counter_page.dart';
-import 'package:aim/pages/exples/table_page.dart';
+import 'package:aim/presentation/pages/exples/counter_page.dart';
+import 'package:aim/presentation/pages/exples/table_page.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
