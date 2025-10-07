@@ -57,6 +57,10 @@ dependencies:
   dart_intl_search: ^1.2.3
   shared_preferences: ^2.5.3
   path_provider: ^2.1.5
+  # for the tool folder
+  grinder: ^0.9.4
+  path: ^1.8.3
+  yaml: ^3.1.2
 
 dev_dependencies:
   flutter_test:

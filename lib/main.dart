@@ -1,6 +1,7 @@
 // Copyright 2023 The terCAD team. All rights reserved.
 // Use of this source code is governed by a CC BY-NC-ND 4.0 license that can be found in the LICENSE file.
 
+import 'package:aim/presentation/pages/exples/add_user_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:provider/provider.dart';
@@ -67,6 +68,7 @@ class MyApp extends StatelessWidget {
       '/counter' => const CounterPage(),
       '/peoples' => const PeopleTablePage(),
       '/products' => const ProductsTablePage(),
+      '/add_user' => UserAddPage(),
       '/' => const HomePage(),
       _ => const HomePage(),
     };
@@ -190,6 +192,17 @@ class HomePage extends StatelessWidget {
               },
               icon: const Icon(Icons.table_chart),
               label: const Text('Open Product List'),
+              style: ElevatedButton.styleFrom(
+                padding: const EdgeInsets.symmetric(horizontal: 32, vertical: 16),
+              ),
+            ),
+            const SizedBox(height: 20),
+            ElevatedButton.icon(
+              onPressed: () {
+                Navigator.pushNamed(context, '/add_user');
+              },
+              icon: const Icon(Icons.table_chart),
+              label: const Text('Add User Example'),
               style: ElevatedButton.styleFrom(
                 padding: const EdgeInsets.symmetric(horizontal: 32, vertical: 16),
               ),
